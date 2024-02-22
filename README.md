@@ -1,0 +1,1 @@
+cargo run --bin src/1.rs
