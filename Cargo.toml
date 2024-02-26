@@ -5,7 +5,7 @@ edition = "2021"
 
 [[bin]]
 name = "test"
-path = "src/25-30.rs"
+path = "src/39-47.rs"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
