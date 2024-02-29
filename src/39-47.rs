@@ -153,7 +153,7 @@ impl Solution {
 
         for i in 0..nums.len() {
             if let Some(&value) = cache.get(&nums[i]) {
-                if i32::abs((value - i) as i32) <= k {
+                if f64::abs((value as f64 - i as f64) as f64) <= k as f64 {
                     return true;
                 }
             }
@@ -229,7 +229,7 @@ fn main() {
     println!("{}", ret);
 
     /* 46. contains_nearby_duplicate */
-    let nums = vec![1, 2, 3, 1];
+    let nums = vec![1, 0, 1, 1];
     let k = 3;
     let ret = Solution::contains_nearby_duplicate(nums, k);
     println!("{}", ret);
